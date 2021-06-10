@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./logo/book.png">
+  <title>地质小书示例</title>
+  <link rel="stylesheet" href="./css/docute.css">
+</head>
+
+<body>
+  <div id="docute"></div>
+  <script src="./js/docute.js"></script>
+  <script>
+    new Docute({
+      target: '#docute',
+      highlight: ['typescript'],
+      editLinkBase: 'https://github.com/NekR/offline-plugin/tree/master',
+      nav: [
+        {
+          title: '主页',
+          link: './docs/examples/SPA.md'
+        },
+        {
+          title: 'GitHub',
+          link: 'https://github.com/NekR/offline-plugin'
+        },
+        {
+          title: '搜索',
+          link: 'https://dizhischool.cn'
+        }
+      ],
+      sidebar: [
+        {
+          title: '第一章',
+          links: [
+            {
+              title: 'Options',
+              link: '/docs/options.md'
+            },
+            {
+              title: '缓存',
+              link: '/docs/caches'
+            },
+            {
+              title: '升级',
+              link: '/docs/updates',
+            },
+            {
+              title: 'Runtime API',
+              link: '/docs/runtime',
+            },
+            {
+              title: 'TypeScript',
+              link: '/docs/typescript',
+            },
+          ]
+        },
+        {
+          title: '示例',
+          links: [
+            {
+              title: 'SPA',
+              link: '/docs/examples/SPA'
+            }
+          ]
+        },
+        {
+          title: 'Misc',
+          links: [
+            {
+              title: 'Troubleshooting',
+              link: '/docs/troubleshooting'
+            },
+            {
+              title: 'FAQ',
+              link: '/docs/faq'
+            }
+          ]
+        }
+      ]
+    })
+  </script>
+</body>
+
+</html>

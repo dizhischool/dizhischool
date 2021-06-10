@@ -1,0 +1,75 @@
+/* 渲染窗口 */
+a {
+	text-decoration: none;
+	color: #bfbfbf;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+	font-size: 1rem;
+	background: #0d0d0d;
+}
+
+
+h1 {
+	color: #f5c700;
+}
+
+h2 {
+	color: #f5c700;
+}
+
+h4 {
+	color: #ffffff;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 98%;
+}
+
+#content {
+	margin: 0 auto;
+	margin-top: 1%;
+	max-height: 96%;
+}
+
+#side {
+	width: 96%;
+	min-height: 45%;
+	text-align: left;
+	color: #c8c8c8;
+	padding: 2%;
+	margin: 0 auto;
+}
+
+#main {
+	min-height: 45%;
+	width: 90%;
+	color: #c8c8c8;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.mx {
+	width: 100%;
+	height: auto;
+}
+
+.lj {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.bt {
+	background-color: #9e7c25;
+	margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+	border-radius: 0.5rem;
+}
+
+#jx {
+	text-align: left;
+}

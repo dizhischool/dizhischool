@@ -1,0 +1,23 @@
+sudo: false
+language: node_js
+node_js:
+  - "6"
+  - "8"
+  - "10"
+env:
+  - TEST_METHOD=ci_fixtures WEBPACK_VERSION=2
+  - TEST_METHOD=ci_fixtures WEBPACK_VERSION=3
+  # webpack 4.26 switched to terser-webpack-plugin
+  - TEST_METHOD=ci_fixtures WEBPACK_VERSION=4.25
+  # Some later webpack version has different output format than 25 and 26
+  - TEST_METHOD=ci_fixtures WEBPACK_VERSION=4.26
+matrix:
+  include:
+    - node_js: "8"
+      env: TEST_METHOD=ci_browser
+before_script:
+  - if [ "$WEBPACK_VERSION" ]; then npm i webpack@$WEBPACK_VERSION; fi
+script: npm run test:"$TEST_METHOD"
+cache:
+  directories:
+    - "node_modules"

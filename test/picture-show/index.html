@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>冯鑫毕业设计——山海经人物立绘设计网页展示</title>
+  <link rel="shortcut icon" href="img/ICON.png">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="video-js/video-js.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="video-js/video.js"></script>
+  <script>
+    videojs.options.flash.swf = "video-js/video-js.swf";
+  </script>
+
+
+
+  <!-- / FB Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dizhischool.cn/test/picture-show/index.html">
+  <meta property="og:title" content="山海经人物立绘设计网页展示">
+  <meta property="og:description" content="互相学习，多多交流，养成学习好习惯,dizhischool.cn">
+  <meta property="og:image" content="https://tigerhall.github.io/images/fulls/03.jpg">
+  <meta property="og:site_name" content="冯鑫毕业设计——山海经人物立绘设计网页展示">
+  <!-- / Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="山海经人物立绘设计网页展示">
+  <meta name="twitter:description" content="冯鑫毕业设计——山海经人物立绘设计网页展示">
+  <meta name="twitter:image" content="https://tigerhall.github.io/images/fulls/03.jpg">
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- 顶部导航 -->
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+      <!-- 导航条居中显示 -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">切换导航</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">观山海万象</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#ad-carousel">图片展览</a></li>
+          <li><a href="#summary-container">个体展示</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">设计说明<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#feature-tab" data-tab="tab-1">葱聋</a>
+              </li>
+              <li>
+                <a href="#feature-tab" data-tab="tab-2">雍和</a>
+              </li>
+              <li><a href="#feature-tab" data-tab="tab-3">九尾狐</a></li>
+              <li>
+                <a href="#feature-tab" data-tab="tab-4">文鳐鱼</a>
+              </li>
+              <li>
+                <a href="#feature-tab" data-tab="tab-5">三青鸟</a>
+              </li>
+              <li><a href="#feature-tab" data-tab="tab-6">讹兽</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#about-modal">关于</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 广告轮播 -->
+  <div id="ad-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#ad-carousel" data-slide-to="1"></li>
+      <li data-target="#ad-carousel" data-slide-to="2"></li>
+      <li data-target="#ad-carousel" data-slide-to="3"></li>
+      <li data-target="#ad-carousel" data-slide-to="4"></li>
+      <li data-target="#ad-carousel" data-slide-to="5"></li>
+      <li data-target="#ad-carousel" data-slide-to="6"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <a target="’blank’" href="img/1-视觉主页面-RGB.jpg" download="主页.jpg">
+          <img src="img/1-视觉主页面-RGB.jpg" alt="1 slide" />
+          <div class="container">
+            <div class="carousel-caption"></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item">
+        <a target="’blank’" href="img/mu/1.jpg" download="葱聋.jpg">
+          <img src="img/mu/1.jpg" alt="2 slide" />
+          <div class="container">
+            <div class="carousel-caption"></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item">
+        <a target="’blank’" href="img/mu/2.jpg" download="雍和.jpg">
+          <img src="img/mu/2.jpg" alt="3 slide" />
+          <div class="container">
+            <div class="carousel-caption"></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item">
+        <a target="’blank’" href="img/mu/3.jpg" download="九尾狐.jpg">
+          <img src="img/mu/3.jpg" alt="4 slide" />
+          <div class="container">
+            <div class="carousel-caption"></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item">
+        <a target="’blank’" href="img/mu/4.jpg" download="文鳐鱼.jpg">
+          <img src="img/mu/4.jpg" alt="5 slide" />
+          <div class="container">
+            <div class="carousel-caption"></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item">
+        <a target="’blank’" href="img/mu/5.jpg" download="三青鸟.jpg">
+          <img src="img/mu/5.jpg" alt="6 slide" />
+          <div class="container">
+            <div class="carousel-caption"></div>
+          </div>
+        </a>
+      </div>
+      <div class="item">
+        <a target="’blank’" href="img/mu/6.jpg" download="讹兽.jpg">
+          <img src="img/mu/6.jpg" alt="7 slide" />
+          <div class="container">
+            <div class="carousel-caption"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+        class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+        class="glyphicon glyphicon-chevron-right"></span></a>
+  </div>
+
+  <!-- 主要内容 -->
+  <div class="container summary">
+    <!-- 简介 -->
+
+    <div class="row" id="summary-container">
+      <div class="col-md-4">
+        <img class="img-circle" src="img/bi/1.jpg" alt="葱聋" />
+        <p></p>
+        <strong style="font-size:large;">葱聋</strong>
+        <p>
+          葱聋，出自《山海经·西山经》：“符禺之水出焉，而北流注于渭。其兽多葱聋，其状如羊而赤鬣。”
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <img class="img-circle" src="img/bi/2.jpg" alt="雍和" />
+        <p></p>
+        <strong style="font-size:large;">雍和</strong>
+        <p>
+          雍和，出自《山海经·卷五 中山经 中次一十一山经》：“又东南三百里，曰丰山。有兽焉，其状如蝯，赤目、赤喙、黄身，名曰雍和，见则国有大恐。”
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <img class="img-circle" src="img/bi/3.jpg" alt="九尾狐" />
+        <p></p>
+        <strong style="font-size:large;">九尾狐</strong>
+        <p>
+          九尾狐,出自春秋战国时期编纂的《山海经》，《山海经》云：“青丘之山有兽焉，其状如狐而九尾，其音如婴儿，能食人，食者不蛊。”
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <img class="img-circle" src="img/bi/4.jpg" alt="文鳐鱼" />
+        <p></p>
+        <strong style="font-size:large;">文鳐鱼</strong>
+        <p>
+          文鳐鱼，出自《山海经·西山经》：“又西百八十里，曰泰器之山。观水出焉，西流注于流沙。是多文鳐鱼，状如鲤鱼，鱼身而鸟翼，苍文而白首，赤喙，常行西海，游于东海，以夜飞。”
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <img class="img-circle" src="img/bi/5.jpg" alt="三青鸟" />
+        <p></p>
+        <strong style="font-size:large;">三青鸟</strong>
+        <p>
+          三青鸟,出自《山海经·西山经》：“又西二百二十里，曰三危之山，三青鸟居之。”，另《山海经·海内北经》：“西王母梯几而戴胜。其南有三青鸟，为西王母取食。”
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <img class="img-circle" src="img/bi/6.jpg" alt="讹兽" />
+        <p></p>
+        <strong style="font-size:large;">讹兽</strong>
+        <p>
+          讹兽,出自《神异经》：“西南荒中出讹兽，其状若菟，人面能言，常欺人，言东而西，言恶而善。其肉美，食之，言不真矣。”
+        </p>
+      </div>
+    </div>
+
+    <!-- 特性 -->
+    <hr class="feature-divider" />
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+      <li class="active">
+        <a href="#tab-1" role="tab" data-toggle="tab">葱聋</a>
+      </li>
+      <li>
+        <a href="#tab-2" role="tab" data-toggle="tab">雍和</a>
+      </li>
+      <li>
+        <a href="#tab-3" role="tab" data-toggle="tab">九尾狐</a>
+      </li>
+      <li>
+        <a href="#tab-4" role="tab" data-toggle="tab">文鳐鱼</a>
+      </li>
+      <li>
+        <a href="#tab-5" role="tab" data-toggle="tab">三青鸟</a>
+      </li>
+      <li>
+        <a href="#tab-6" role="tab" data-toggle="tab">讹兽</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab-1">
+        <div class="row feature">
+          <div class="col-md-7">
+            <h2 class="feature-heading">
+              葱聋
+            </h2>
+            <br>
+            <p class="lead">
+              <strong>设计原型：羚羊</strong>
+            <p></p>
+            <strong>设计说明：</strong>
+            关于葱聋，其原身似羚羊。因此，对于此异兽的重点设计特征体现在了羊角处。面色冷淡的葱聋，红色的眼瞳静静地望向前方，冷淡中带着丝丝坚定。胸前复杂和多样配饰更衬出葱聋肤白胜雪，一袭紫黑色长裙明艳动人。头上顶着的羊角是她的个人特征，红色长发与红瞳相映，脸颊上一抹鲜红为她增添几分韵味和神秘气息。脸庞倚靠在手臂上侧耳俯视，坐在橙红的明月上，周围徐徐燃烧的符咒紧融在紫色的背景里。
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="feature-image img-responsive" src="img/uu/1.jpg" alt="葱聋" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="tab-2">
+        <div class="row feature">
+
+          <div class="col-md-7">
+            <h2 class="feature-heading">
+              雍和
+            </h2>
+            <br>
+            <p class="lead">
+              <strong>设计原型：猿</strong>
+            <p></p>
+            <strong>设计说明：</strong>
+            据古籍上记载，雍和外貌与猿相似，同时，她还拥有红色的眼睛，红嘴巴以及黄色的皮毛。所以，在绘制画面时，让雍和的红黄色长发在空中飞舞，凌乱张扬的头发遮住右眼，妩媚的深红色瞳眸与病娇神态中的疯狂气息，时刻散发着魔性。设计绘制中，立绘人物身形窈窕妩媚，穿着单薄的黑色披风，裸露在外的暗黑色肌肤透露着一丝冷血，缠绕在躯体上的绷带难掩内心疯狂。传说它一出现必有大灾荒伴随出现，因此将猿的尾巴改造成巨大的黑色骨尾，并从身后高高翘起，使见到她的人不寒而栗。
+            </p>
+          </div>
+
+          <div class="col-md-5">
+            <img class="feature-image img-responsive" src="img/uu/2.jpg" alt="雍和" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="tab-3">
+        <div class="row feature">
+          <div class="col-md-7">
+            <h2 class="feature-heading">九尾狐</h2>
+            <br>
+            <p class="lead">
+              <strong>设计原型：狐狸</strong>
+            <p></p>
+            <strong>设计说明：</strong>
+            九尾狐，外貌特征就是拥有九条尾巴的狐狸，具有神性。因此，在画面绘制中，将九尾狐体型塑造的较为瘦小，身着宽大衣袍更显手腕与脚踝的纤细。雪白的面颊上挂着孩童般天真的笑容，一双澄亮的大眼睛，让狐狸特有的竖瞳愈发明艳。异兽的耳朵和尾巴都采取相似的共同点，发尾、耳朵根部以及尾巴根部都以红色色块过渡，黑色色块收尾。赤色的耳朵高高翘起，腰间挂着黑色的狐狸面具，加以橙色和金色的点缀，增添了古老神秘的气息，灵动的身躯拨弄着花朵，给人物增添了几分俏皮。
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="feature-image img-responsive" src="img/uu/3.jpg" alt="九尾狐" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="tab-4">
+        <div class="row feature">
+
+          <div class="col-md-7">
+            <h2 class="feature-heading">文鳐鱼</h2>
+            <br>
+            <p class="lead">
+              <strong>设计原型：鲤鱼</strong>
+            <p></p>
+            <strong>设计说明：</strong>
+            据古籍记载，文瑶鱼形状像鲤鱼，拥有鱼的身体，鸟的翅膀，白头红嘴，身上有苍色斑纹。因此在创作中，首先将文瑶鱼以美人鱼的轮廓呈现，尾部保留了鱼的体型。随后，在异兽的服装上做重点塑造，使用鸟类的翅膀羽毛的形态。融合了海洋方面的元素，色彩主要以蓝色，紫色及少量橙色构成，通过周边跳动的水纹和鱼儿突出场景氛围。
+            </p>
+          </div>
+
+          <div class="col-md-5">
+            <img class="feature-image img-responsive" src="img/uu/4.jpg" alt="文鳐鱼" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="tab-5">
+        <div class="row feature">
+          <div class="col-md-7">
+            <h2 class="feature-heading">三青鸟</h2>
+            <br>
+            <p class="lead">
+              <strong>设计原型：燕子</strong>
+            <p></p>
+            <strong>设计说明：</strong>
+            三青鸟，是一种色泽亮丽，体态轻盈，娇弱依人的鸟类，共三只。在创作过程中，我将设计原色分为“三”、“青”、“鸟”三个元素，分别理解为三只、青色、鸟类。据考擦，此异兽是神性的吉祥之物，所以在创作过程不采用“邪恶”的颜色。立绘头部通过鸟的外在形态拼接组合而成，整体色泽以青色及绿色为主，尾部用三只青鸟做点缀，青色的服饰与三青鸟微扬的绿眸相映，青鸟轮廓让与生俱来的神秘气质更加浓厚。粉色的发丝微微下垂，简单的绿衣纤尘不染，尽显三青鸟色泽亮丽，体态轻盈的气质。
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="feature-image img-responsive" src="img/uu/5.jpg" alt="三青鸟" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="tab-6">
+        <div class="row feature">
+
+          <div class="col-md-7">
+            <h2 class="feature-heading">讹兽</h2>
+            <br>
+            <p class="lead">
+              <strong>设计原型：兔子</strong>
+            <p></p>
+            <strong>设计说明：</strong>
+            讹兽，拥有娇好的面容，人面兔身，是穿着人衣的兔子。在设计过程中，我首先将有着兔子特征的灵动的耳朵以及圆圆的尾巴表现出来。据相关古籍记载，这种灵气且充满善意的妖兽，肉质鲜美，但吃了后便无法说真话了，喜骗人，因此它同样具有狡猾这个特点。为了将人物的狡猾展现出来，将立绘动作形态以一只手挡住半张脸的形态表达出来，亮丽的双马尾微微飘扬，为异兽增添了一抹娇俏可爱。异兽仪态优美，举手投足间都透露着灵气、魅惑和神秘。画面整体颜色以橙色和红色呈现，给予异兽鲜亮活泼的个性色彩。
+            </p>
+          </div>
+
+          <div class="col-md-5">
+            <img class="feature-image" src="img/uu/6.jpg" alt="讹兽" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 关于 -->
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+              <span class="sr-only">关闭</span>
+            </button>
+            <h4 class="modal-title" id="modal-label">关于</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/2.jpg" alt="背景" style="max-height: 350px;display: block;margin: 0 auto; border-radius: 10px;">
+            <br>
+            <p>
+              我选择出了相对具有代表性且感兴趣的异兽来进行设计，分别是葱聋，雍和、九尾狐、文鳐鱼、三青鸟和讹兽。
+            </p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              了解
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="pull-right">
+        <a href="#top" style="text-decoration: none">回到顶部</a>
+      </p>
+      <p>&copy; 2021 冯鑫</p>
+    </footer>
+  </div>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/play.js"></script>
+</body>
+
+</html>

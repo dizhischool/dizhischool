@@ -1,0 +1,16 @@
+{
+"companyName": "地质校园",
+"productName": "晶体模型",
+"productVersion": "1.6",
+"dataUrl": "16.data.unityweb",
+"wasmCodeUrl": "16.wasm.code.unityweb",
+"wasmFrameworkUrl": "16.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.1.10f1"
+}
